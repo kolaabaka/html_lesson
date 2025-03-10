@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 7</title>
+    <style>
+        body{
+            margin: auto;
+            max-width: 800px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lesson 7</h1>
+    <h2>Неупорядоченные списки(unordred list)</h2>
+    <h3>Простой неупорядоченный список</h3>
+    <ul>
+        <li>Молоко</li>
+        <li>Хлеб</li>
+        <li>Печенье</li>
+        <li>Мясо</li>
+    </ul>
+    <h3>Вложенный список</h3>
+    <ul>
+        <li>Главная</li>
+        <li>Каталог товаров
+            <ul>
+                <li>Молочные товары</li>
+                <li>Мясо</li>
+                <li>Выпечка</li>
+            </ul>
+        </li>
+        <li>Контакты</li>
+    </ul>
+    <h3>Неупорядоченная пагинация</h3>
+    <nav aria-label="Page navigation">
+        <ul>
+            <li><a href="#">Previous</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">Next</a></li>
+        </ul>
+    </nav>
+    <h2>Упорядоченные списки(ordered list)</h2>
+    <h3>Простой упорядоченный список</h3>
+    <ol>
+        <li>Зелёный - иди</li>
+        <li>Не зелёный - не иди</li>
+        <li>Непонятно - не иди</li>
+    </ol>
+    <h3>Комбинация упорядоченного и неупорядоченного</h3>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2
+            <ul>
+                <li>SubItem1</li>
+                <li>SubItem2</li>
+                <li>SubItem3</li>
+            </ul>
+        </li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ol>
+    <h3>Уопрядоченный список breadcrum</h3>
+    <nav>
+        <ol>
+            <li><a href="#">Home</a></li>
+            <li aria-current="page">Library</li>
+        </ol>
+    </nav>
+    <h3>Упорядоченный список с атрибутом reversed</h3>
+    <ol reversed>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <h3>Упорядоченный список с атрибутом start</h3>
+    <ol start="4">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <h3>Упорядоченный список с атрибутом type</h3>
+    <ol type="I">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <h2>Список термин-определение(description list)</h2>
+    <dl>
+        <dt>DTO</dt>
+        <dd>Data transfer object</dd>
+        <dt>DAO</dt>
+        <dd>Data access object</dd>
+    </dl>
+</body>
+</html>

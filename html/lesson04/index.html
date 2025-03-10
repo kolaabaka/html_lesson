@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 04</title>
+    <style>
+        body{
+            max-width: 800px;
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body> 
+    <h1>Lesson 4</h1>
+    <h2>Верхний и нижний индексы</h2>
+    <h3>sup - верхний индекс</h3>
+    <p>3 <sup>2</sup> = 9</p>
+    <p>К 2040 году население Земли будет очень много человеков 414141 млрд<sup>[1]</sup></p>
+    <h3>sub - нжний индекс</h3>
+    <p>H<sub>2</sub>O - молекула воды</p>
+    <h2>Справочная информация</h2>
+    <h3>abbr - аббревиатура</h3>
+    <p> <abbr title="Организация объеденённых наций">ООН</abbr> - круто</p>
+    <h3>dfn - тег жпределения</h3>
+    <p><dfn>HTML</dfn> - язык гипертекствой разметки для создания веб страниц</p>
+    <p><dfn title="HyperText Markup Language">HTML</dfn> - язык гипертекствой разметки для создания веб страниц</p>
+    <p><dfn><abbr title="HyperText Markup Language">HTML</abbr></dfn> - язык гипертекствой разметки для создания веб страниц</p>
+    <h3>time - тег времени и даты</h3>
+    <p>наш магазин рабоатет с <time>9:00</time> до <time>17:00</time></p>
+    <p>Успейте купить товары со скидкой до <time datetime="2022-01-01 00:00">Нового года</time></p>
+    <h3>data - маиночитаемый текст</h3>
+    <p>Товар: <data value="212453">Cherry tomato</data></p>
+    <h2>address - тег контактной информации</h2>
+    <address>
+        Автор <a href="ссылка куда-то">Иван Бездомный</a>.<br>
+        Адрес для писем:<br>
+        Город МОСКВАААА
+    </address>
+    <h2>Специальные блочные обёртки</h2>
+    <h3>pre - предварительно форматированный текст</h3>
+    <p>
+        Кринж
+        хайп
+        NullPointerException
+    </p>
+    <pre>
+        Кринж
+        хайп
+        NullPointerException
+    </pre>
+    <h3>figure - тег группировки элемента с его описанием</h3>
+    <figure>
+        <pre role="img" aria-label="ASCII COW">
+            ___________________________
+        &lt; I'm an expert in my field. &gt;
+            ---------------------------
+                \   ^__^
+                 \  (oo)\_______
+                    (__)\       )\/\
+                        ||----w |
+                        ||     ||
+        </pre>
+        <figcaption id="cow-caption">
+          A cow saying, "I'm an expert in my field." The cow is illustrated using
+          preformatted text characters.
+        </figcaption>
+    </figure>
+    <h3>template - тег шаблона</h3>
+    <template>
+        <h4>Title</h4>
+        <p>Description</p>
+    </template>
+      
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 8</title>
+    <style>
+        body{
+            margin: auto;
+            max-width: 800px;
+        }
+        @media (max-width: 640px) {
+            img{
+                width: 427px;
+                height: 240px;
+            }
+        }
+        @media (max-width: 450px) {
+            img{
+                width: 320px;
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Lesson 8</h1>
+    <h2>img - тег просто вставки изображения</h2>
+    <img src="images/dog.jpg" alt="Собака кусака" width="640"> <!--Следует указывать ширину и высоту, чтобы макт не прыгал, если интернет медленный-->
+    <p>Параграф для придания странице божеского вида</p>
+    <h2>figure - тег вставки изображения с подписью</h2>
+    <figure>
+        <img src="images/nature.jpg" alt="Природа красивая, листья"
+        width="640" height="400">
+        <figcaption>Image 2, nature</figcaption>
+    </figure>
+    <h2>picture - набор изображения для рахличных условий</h2>
+    <picture>
+        <source media="(max-width: 450px)" srcset="images/dog.jpg">
+        <source media="(max-width: 700px)" srcset="images/nature.jpg">
+        <img src="images/tree.jpg" alt="Дерево" width="640" height="320">
+    </picture>
+    <picture>
+        <source type="Image/webp" srcset="images/dog.webp">
+        <img src="images/dog.jpg" alt="Собака кусака" width="640" height="450">
+    </picture>
+</body>
+</html>
