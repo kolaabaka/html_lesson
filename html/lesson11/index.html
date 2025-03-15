@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 11</title>
+    <style>
+        body{
+            margin: auto;
+            max-width: 800px;
+        }
+        .colgroup-table {
+            margin: auto;
+            border-collapse: collapse;
+            background-color: lightyellow;
+            width: 400px;
+        }
+        .colgroup-table td,
+        .colgroup-table th{
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lesson 11</h1>
+    <h2>Table 1</h2>
+    <table width="500" align="center" bgcolor="lightyellow" cellpadding="5" border="15">
+        <caption>Семейный бюджет</caption>
+        <thead bgcolor="lightblue">
+            <th>Месяц</th>
+            <th>Доходы</th>
+            <th>Расходы</th>
+            <th>Разница</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Январь</td>
+                <td>900$</td>
+                <td>800$</td>
+                <td>100$</td>
+            </tr>
+            <tr>
+                <td>Февраль</td>
+                <td>900$</td>
+                <td>900$</td>
+                <td>0$</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td>Итого:</td>
+            <td>1800$</td>
+            <td>1700</td>
+            <td>100</td>
+        </tfoot>
+    </table>
+    <h2>colspan - атрибут объединение ячеек в разных столбцах</h2>
+    <table width="500" align="center" bgcolor="lightyellow" cellpadding="5" border="15">
+        <caption>Корзина пуста</caption>
+        <thead bgcolor="lightblue">
+            <td>№ п/п</td>
+            <td>Наименование</td>
+            <td>Количество</td>
+            <td>Цена за единицу</td>
+            <td>Всего</td>
+        </thead>
+        <tbody>
+            <td>1</td>
+            <td>Хлеб</td>
+            <td>1</td>
+            <td>100р</td>
+            <td>100р</td>
+        </tbody>
+        <tbody>
+            <td>2</td>
+            <td>Яйца</td>
+            <td>10</td>
+            <td>5р</td>
+            <td>50р</td>
+        </tbody>
+        <tfoot>
+            <td colspan="4">Итого</td>
+            <td>150</td>
+        </tfoot>
+    </table>
+    <h2>rowspan - атрибут объединения ячеек в разных строках</h2>
+    <table width="500" align="center" bgcolor="lightyellow" cellpadding="5" border="15">
+        <caption>Расписание занятий</caption>
+        <thead bgcolor="lightblue">
+            <td>День недели</td>
+            <td>Урок</td>
+            <td>Время</td>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Вторник</td>
+                <td>Матетматика</td>
+                <td>8 00 - 9 30</td>
+            </tr>
+            <tr>
+                <td>Матетматика</td>
+                <td>9 45 - 10 99</td>
+            </tr>    
+        </tbody>
+    </table>
+    <h2>headers - атрибут связи ячеек с заголовками столбца</h2>
+    <table width="500" align="center" bgcolor="lightyellow" cellpadding="5" border="15">
+        <thead>
+            <tr>
+                <th id="name" colspan="2">Name</th>
+            </tr>
+            <tr>
+                <th id="name">FirstName</th>
+                <th id="name">LastName</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lora</td>
+                <td>Palner</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>scope - атрибут связывания данных таблицы</h2>
+    <table width="500" align="center" bgcolor="lightyellow" cellpadding="5" border="15">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First name</th>
+                <th scope="col">Last name</th>
+                <th scope="col">Nick</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Sukerberbra</td>
+                <td>@qsdsc</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Kilkasmasmol</td>
+                <td>Lolpa</td>
+                <td>@aaasd123</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>colorgroup - тег группировок колонок в таблице</h2>
+    <table class="colgroup-table">
+        <colgroup>
+            <col span="2">
+            <col style="background-color: lightblue;">
+        </colgroup>
+        <tr>
+            <th>ISBN</th>
+            <th>Title</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>3476896</td>
+            <td>My first HTML</td>
+            <td>$55</td>
+        </tr>
+    </table>
+</body>
+</html>

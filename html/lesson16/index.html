@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Burger + cafe">
+    <meta name="keywords" content="burger, cafe, pizza">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <title>Burger +</title>
+</head>
+<body>  
+    <header>
+        <!--Navigation-->
+        <nav>
+            <h1><a href="index.html">BURGER +</a></h1>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <!--/Navigation-->
+        <hr>
+    </header>
+    <main>
+        <!--Banner-->
+        <div>
+            <img src="images/banner.jpg" alt="Баннер">
+            <h2>Burger + the best cafe in the TOWN!</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+        </div>
+        <!--Banner-->
+        <!--Section-->
+        <section>
+            <ul class="container">
+                <li class="item">
+                    <h3>Burger 1</h3>
+                    <p>Lorem, ipsum.</p>
+                    <p>10$</p>
+                </li>
+                <li class="item">
+                    <h3>Burger 2</h3>
+                    <p>Lorem, ipsum.</p>
+                    <p>15$</p>
+                </li>
+                <li class="item">
+                    <h3>Burger 3</h3>
+                    <p>Lorem, ipsum.</p>
+                    <p>22$</p>
+                </li>
+                <li class="item">
+                    <h3>Burger 4</h3>
+                    <p>Lorem, ipsum.</p>
+                    <p>27$</p>
+                </li>
+            </ul>
+        </section>
+        <hr>
+        <!--/Section-->
+        <!--About us-->
+        <section clas="container">
+            <div>
+                <img src="images/img1.jpg" alt="About Burger +" height="200">
+            </div>
+            <div>
+                <h2>About us</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque dolore impedit nisi, hic illum sint!</p>
+                <a href="about.html">More info</a>
+            </div>
+        </section>
+        <!--/About us-->
+        <!--Book a table-->
+        <section>
+            <h2>Book a table</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe placeat dicta animi facere!</p>
+            <form action="#">
+                <label>Name <input type="text" id="name" name="name" placeholder="Name" required></label>
+                <label>Phone <input type="tel" name="phone" required pattern="[0-9]{10}" placeholder="Phone number"></label><br><br>
+                <label>Date/Time <input type="datetime-local" required name="datetime-local"></label>
+                <br><br>
+                <input type="submit" value="Book!">
+            </form>
+        </section>
+        <!--/Book a table-->
+        <hr>
+        <!--Testimonials-->
+        <section>
+            <h2>Testimonials</h2>
+            <div class="container">
+                <ul>
+                    <li>
+                        <q>Lorem ipsum dolor sit amet consectetur.</q><br>
+                        <small>Tom Smith</small>
+                    </li>
+                    <li>
+                        <q>Lorem, ipsum dolor.</q><br>
+                        <small>Sahra Croft</small>
+                    </li>
+                    <img src="images/customers.jpg" alt="Customers" heigth="250">
+                </ul>
+            </div>
+        </section>
+        <!--/Testimonials-->
+        <hr>
+        <!--Our blog-->
+        <section>
+            <h2>Our blog</h2>
+            <div class="container">
+                <article>
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <time datetime="2022-05-15 10:00">15/05/2022</time>
+                    <img src="images/02.jpg" alt="Blog news 1" width="350">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque maiores officia laborum exercitationem iure dolor?</p>
+                    <a href="article.html">read more</a>
+                </article>
+                <article>
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <time datetime="2022-05-15 10:00">15/05/2022</time>
+                    <img src="images/02.jpg" alt="Blog news 1" width="350">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque maiores officia laborum exercitationem iure dolor?</p>
+                    <a href="article.html">read more</a>
+                </article>
+            </div>
+        </section>
+        <!--/Our blog-->
+        <hr>
+        <!--Working hours-->
+        <section>
+            <h2>Working hours</h2>
+            <table>
+                <thead>
+                    <tr bgcolor="gray">
+                        <th width="100">#</th>
+                        <th width="200">Day</th>
+                        <th width="300">Working hours</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Mon - Fri</td>
+                        <td>09.00 - 18.00</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Sat - Sun</td>
+                        <td>12.00 - 21.00</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+        </section>
+        <!--/Working hours-->
+        <hr>
+        <!--Contact-->
+        <section>
+            <h2>Contact</h2>
+            <p>Please, be free to contact us</p>
+            <form action="#">
+                <label for="message">Your message:</label>
+                <textarea name="message" id="message" cols="100" rows="10" required></textarea>
+                <input type="submit" value="Send"><br><br>
+            </form>
+        </section>
+        <!--/Contact-->
+        <hr>
+    </main>
+    <footer>
+        <div class="container">
+            <!--Contact info-->
+            <div>
+                <h3>Contact info</h3>
+                <address>&#9993; 20550, London, Free av, 455, Egypt
+                <br>
+                    &commat; <a href="mailto:mailbox@burgerplus.com">mailbox@burgerplus.com</a><br>
+                    &#9743; +01 345-45-67 <br>
+            </address>
+            </div>
+            <!--/Contact info-->
+            <!--Useful links-->
+            <div>
+                <h3>Useful links</h3>
+                <ul>
+                    <li><a href="about.html">about us</a></li>
+                    <li><a href="blog.html">our blog</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </div>
+            <!--/Useful links-->
+            <!--/Contact-->
+            <div>
+                <h3></h3>
+            </div>
+            <!--/Contact-->
+            <!--Last news-->
+            <div>
+                <h3>Last news</h3>
+                <ul>
+                    <li><a href="article.html">Lorem ipsum dolor sit.</a></li>
+                    <li><a href="article.html">Lorem ipsum dolor sit.</a></li>
+                    <li><a href="article.html">Lorem ipsum dolor sit.</a></li>
+                </ul>
+            </div>
+            <!--/Last news-->
+        </div>
+        <p>&copy; 2022/ Burger +. All rights reserved</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 13</title>
+    <style>
+        body{
+            margin: auto;
+            max-width: 850px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lesson 13</h1>
+    <h2>Form 1</h2>
+    <form action="#" method="POST" id="form1">
+        <label for="cars">Choose a car:</label>
+        <select name="cars" id="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab" disabled>Saab</option>
+            <option value="opel" selected>Opel</option>
+        </select><br>
+        <input type="submit" value="Отправить">
+    </form>
+    <h2>Form 2</h2>
+    <form action="#" method="POST" id="form2">
+        <select id="colors">
+            <option disabled selected value="">Please select color</option>
+            <option value="white">White</option>
+            <option value="green">Green</option>
+            <option value="red">Red</option>
+        </select><br>
+        <input type="submit" value="Отправить">
+    </form>
+    <h2>Form 3</h2>
+    <form action="#" id="form3">
+        <label for="worldCars">Choose a car</label>
+        <select name="worldCars" id="worldCars">
+            <optgroup label="German car">
+                <option value="BMW">BMW</option>
+                <option value="AUDI">AUDI</option>
+                <option value="OPEL">OPEL</option>
+            </optgroup>
+            <optgroup label="Swedish car">
+                <option value="saab">Saab</option>
+                <option value="volvo">Volvo</option>
+            </optgroup>
+        </select><br>
+        <input type="submit" value="Submit">
+    </form>
+    <h2>Form 4</h2>
+    <form action="#" method="POST">
+        <label for="mycar">Choose your car name:</label>
+        <input list="carnames" name="mycar" id="mycar">
+        <datalist id="carnames">
+            <option value="Volvo">
+            <option value="Opel">
+            <option value="BMW">
+        </datalist>
+        <input type="submit" value="Submit">
+    </form>
+    <h2>Form 5</h2>
+    <form action="#">
+        <label><input type="text">Print your name</label><br>
+        <label for="comment">Comment:</label><br>
+        <textarea name="comment" id="comment" rows="4" cols="50"></textarea><br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <p>
+        <!--Если на одной строке, то пробела не будет, если на арзных то будет. Так же работает с тегом textarea внтури будут ставиться пробелы-->
+        <img src="R.jpg" alt="" height="150"><img src="R.jpg" alt="" height="150">
+    </p>
+    <h2>Form 6
+        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            <input type="number" id="a" value="0">+
+            <input type="number" id="b" value="0">
+            =<output name="x" for="a b"></output>
+            <br><br>
+        </form>
+    </h2>
+</body>
+</html>

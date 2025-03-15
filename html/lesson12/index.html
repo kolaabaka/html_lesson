@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 12</title>
+    <style>
+        body{
+            max-width: 850px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lesson 12</h1>
+    <h2>Form 1</h2>
+    <form action="#" method="POST">
+        <label for="login">Login:</label>
+        <input type="text" id="login" name="login">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <br>
+        <input type="reset" value="Reset">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    <h2>Form 2</h2>
+    <form action="#" method="POST">
+        <label>Name: <input type="text" required></label><br>
+        <label>Email: <input type="email" required></label><br>
+        <input type="submit" value="Submit">
+    </form>
+    <h2>Form 3</h2>
+    <form action="#">
+        <p>Движимое имущество</p>
+        <input type="checkbox" id="bike" name="vechiles" value="Bike">
+        <label for="bike">Велосипед</label><br>
+        <input type="checkbox" id="motobike" name="vechiles" value="MotorBike">
+        <label for="motobike">Мотоцикл</label><br>
+        <input type="checkbox" id="car" name="vechiles" value="Car">
+        <label for="car">Автомобиль</label>
+
+        <p>Недвижимое имущество</p>
+        <input type="radio" id="private" name="vechiles" value="private">
+        <label for="private">Частный дом</label><br>
+        <input type="radio" id="apartment" name="vechiles" value="apartment">
+        <label for="apartment">Квартира</label><br>
+        <input type="radio" id="room" name="vechiles" value="room">
+        <label for="room">Комната</label><br><br>
+
+        <input type="submit" value="Отправить">
+    </form>
+    <h2>Form 4</h2>
+    <form action="#" id="form4" enctype="multipart/form-data">
+        <label for="fname">Имя файла</label>
+        <input type="text" name="fname" id="fname" required><br>
+        <label for="myfile">Выбрать файл</label>
+        <input type="file" name="myfile" id="myfile"><br>
+        <input type="image" src="submit.png" alt="Submit" width="120" height="120">
+    </form>
+    <label for="agree"><input type="checkbox" form="form4" id="agree" name="agree" value="yes" checked>С условиями предоставления услуг согласен</label>
+    <h2>Form 5</h2>
+    <fieldset form="form5">
+        <legend>Person info</legend>
+        <label for="firstName">First name:</label>
+        <input type="text" id="firstName"><br><br>
+        <label for="lastName">Last name:</label>
+        <input type="text" id="lastName">
+    </fieldset><br><br>
+    <fieldset form="form5">
+        <legend>Education</legend>
+        <label>Образование: <input type="text"></label>
+    </fieldset>
+    <input type="submit" form="form5" value="Submit 5">
+</body>
+</html>

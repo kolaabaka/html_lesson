@@ -1,2 +1,4 @@
 https://www.pngwing.com/?ysclid=m83kctapml742583612 - png
 https://pixabay.com/ - jpg
+https://www.pngwing.com/ - png
+https://validator.w3.org/ - validator

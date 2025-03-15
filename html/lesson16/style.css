@@ -1,0 +1,12 @@
+body{
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.container{
+    display: flex;
+}
+
+.container{
+    padding: 15px;
+}

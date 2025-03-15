@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 10</title>
+    <style>
+        body{
+            margin: auto;
+            max-width: 800px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lesson 10</h1>
+    <h2>audio - тег для добавления аудио-файла</h2>
+    <audio controls>
+        <source src="media/audio-test.ogg" type="audio/ogg">
+        <source src="media/audio-test.mp3" type="audio/mpeg">
+        Ваш браузер не поддерживает тег audio
+    </audio>
+    <h2>video - тег добавления видео-файла</h2>
+    <video width="320" controls>
+        <source src="media/video.ogg" type="video/ogg">
+        <source src="media/video.mp4" type="video/mp4">
+        <track><!--Используется для добавления синхронизированных субтитров-->
+    </video>
+    <br>
+    <iframe src="frame.html" title="Other page" width="400" height="500" frameborder="0"></iframe>
+    <h2>object - текст встраивания объекта на страницу</h2>
+    <div>
+        <object data="frame.html" type="text/html" width="500"></object>
+    </div>
+    <div>
+        <object data="media/web.png" type="image/png" width="250"></object>
+    </div>
+    <div>
+        <object data="media/video.mp4" type="video/mp4" width="350"></object>
+    </div>
+    <h2>embed - тег встраиваяния связанного ресурса</h2>
+    <div>
+        <embed src="frame.html" type="text/html" width="500">
+    </div>
+    <div>
+        <embed src="media/web.png" type="image/png" width="250">
+    </div>
+    <div>
+        <embed src="media/video.mp4" type="video/mp4" width="350">
+    </div>
+</html>
